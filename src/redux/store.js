@@ -3,11 +3,12 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 // reducers
-import { authReducer } from "./reducers/authReducer";
+
+import { studentReducer } from "./reducers/studentReducer";
 
 
 const reducer = combineReducers({
-  auth: authReducer,
+  data: studentReducer,
 });
 
 let initialState = {};

@@ -1,0 +1,22 @@
+
+.navbar{
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 10px;
+    background-color: #fff;
+    .page-name{
+        color: rgb(0, 94, 94);
+        font-size: 25px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .user-name{
+        font-size: 16px;
+        color: #222;
+        font-weight: 600
+    };
+    .user-email{
+        line-height: 10px;
+        font-size: 12px;
+        color: gray;
+    }
+}

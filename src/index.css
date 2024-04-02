@@ -1,5 +1,38 @@
 body {
   margin: 0;
+  
+}
+
+.green-btn{
+  transition: .5s;
+  position: relative;
+  z-index: 2;
+  text-transform: capitalize;
+  background-color: rgb(1, 233, 156);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px
+}
+.green-btn:hover{
+  background-color: rgb(1, 197, 132);
+}
+
+.red-btn{
+  transition: .5s;
+  position: relative;
+  z-index: 2;
+  text-transform: capitalize;
+  background-color: rgb(252, 2, 56);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px
+}
+.red-btn:hover{
+  background-color: rgb(196, 5, 47);
 }
 
 
@@ -11,3 +44,5 @@ body {
 /* components css files */
 @import 'styles/components/login.css';
 @import 'styles/components/register.css';
+@import 'styles/layout/defaultLayout.css';
+@import 'styles/components/layout/navbar.css';

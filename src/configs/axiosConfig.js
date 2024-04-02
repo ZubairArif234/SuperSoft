@@ -1,7 +1,7 @@
 import axios from "axios";
-// import { errorMessage } from "../globalFunctions";
 
-export const baseURL = "http://127.0.0.1:8000/api";
+
+export const baseURL = "http://localhost:8080/students/";
 
 // axios instance for json data
 const custAxios = axios.create({

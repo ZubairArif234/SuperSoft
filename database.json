@@ -1,0 +1,58 @@
+{
+  "students": [
+    {
+      "id": 3,
+      "name": "Zafar hussain"
+    },
+    {
+      "id": 1,
+      "name": "ansari alam"
+    },
+    {
+      "id": 4,
+      "name": "ansari alam"
+    },
+    {
+      "id": 5,
+      "name": "ahmed aalam",
+      "class": "Svelte",
+      "section": "Vue"
+    },
+    {
+      "id": 6,
+      "name": "junaid jumshad",
+      "class": "Vue",
+      "section": "Vue"
+    },
+    {
+      "id": 7,
+      "name": "junaid jumshad",
+      "class": "Vue",
+      "section": "Vue"
+    },
+    {
+      "id": 8,
+      "name": "junaid jumshad",
+      "class": "Vue",
+      "section": "Vue"
+    },
+    {
+      "id": 9,
+      "name": "junaid jumshad",
+      "class": "Vue",
+      "section": "Vue"
+    },
+    {
+      "id": 10,
+      "name": "junaid jumshad",
+      "class": "Vue",
+      "section": "Vue"
+    },
+    {
+      "id": 9,
+      "name": "kiran khan",
+      "class": "Vue",
+      "section": "Svelte"
+    }
+  ]
+}

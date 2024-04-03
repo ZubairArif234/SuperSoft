@@ -48,11 +48,7 @@ body {
 
 /* Imported stylesheets */
 
-/* pages css files */
-@import 'styles/pages/auth.css';
 
-/* components css files */
-@import 'styles/components/login.css';
-@import 'styles/components/register.css';
+
 @import 'styles/layout/defaultLayout.css';
 @import 'styles/components/layout/navbar.css';

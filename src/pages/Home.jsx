@@ -32,7 +32,7 @@ const Home = () => {
     dispatch(getClasses());
     dispatch(getSections());
   }, []);
-  console.log(sections);
+ 
   const form = useForm({
     initialValues: { id: "", name: "", class: "", section: "" },
 
@@ -181,7 +181,7 @@ const Home = () => {
         <button
           className="green-btn p-2 px-3 me-3"
           onClick={() => {
-            open(), form?.reset(), setEdit(false);
+            open(); form?.reset(); setEdit(false);
           }}
         >
           add student
@@ -193,10 +193,9 @@ const Home = () => {
         >
           Export Excel
         </CSVLink>
-        {/* <button className='green-btn p-2 px-3' onClick={()=> dispatch(addStudent({id:4,name:"ansari alam"}))}>add student</button> */}
+       
       </div>
-      {/* <button onClick={()=> dispatch(getAll())}>get student</button>
-      <button onClick={()=> dispatch(updateStudent({id:2,name:"ansari alam"},2))}>update student</button> */}
+     
       <div className="my-2">
         {loading ? (
           <div className="h-100 w-100 d-flex justify-content-center align-items-center position-relative">

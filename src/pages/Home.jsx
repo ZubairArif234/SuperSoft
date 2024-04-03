@@ -17,8 +17,8 @@ const Home = () => {
   const headers = [
     { label: "Student id", key: "id" },
     { label: "Student name", key: "name" },
-    { label: "Class", key: "class" },
-    { label: "Section", key: "section" },
+    { label: "Class", key: "class.name" },
+    { label: "Section", key: "section.name" },
   ];
   const [edit, setEdit] = useState(false);
   const [opened, { open, close }] = useDisclosure(false);
@@ -32,7 +32,7 @@ const Home = () => {
     dispatch(getClasses());
     dispatch(getSections());
   }, []);
- 
+
   const form = useForm({
     initialValues: { id: "", name: "", class: "", section: "" },
 
@@ -44,18 +44,23 @@ const Home = () => {
   });
 
   const column = [
-    { accessor: "id", title: "S.No",width:"10%", render: (row, i) => {
-      return (
-        <p className="mb-0" key={i}>
-          {i+1}
-        </p>
-      );
-    }, },
-    { accessor: "name", title: "Name" , width:"50%" },
+    {
+      accessor: "id",
+      title: "S.No",
+      width: "10%",
+      render: (row, i) => {
+        return (
+          <p className="mb-0" key={i}>
+            {i + 1}
+          </p>
+        );
+      },
+    },
+    { accessor: "name", title: "Name", width: "50%" },
     {
       accessor: "class",
       title: "Class",
-      width:"10%",
+      width: "10%",
       render: (row, i) => {
         return (
           <p className="mb-0" key={i}>
@@ -67,7 +72,7 @@ const Home = () => {
     {
       accessor: "section",
       title: "Section",
-      width:"10%",
+      width: "10%",
       render: (row, i) => {
         return (
           <p className="mb-0" key={i}>
@@ -79,7 +84,7 @@ const Home = () => {
     {
       accessor: "action",
       title: "Actions",
-      width:"10%",
+      width: "10%",
       render: (row, i) => {
         return (
           <div key={i} className="d-flex">
@@ -140,7 +145,6 @@ const Home = () => {
         )
       );
     } else {
-    
       res = await dispatch(
         addStudent({
           ...values,
@@ -181,7 +185,9 @@ const Home = () => {
         <button
           className="green-btn p-2 px-3 me-3"
           onClick={() => {
-            open(); form?.reset(); setEdit(false);
+            open();
+            form?.reset();
+            setEdit(false);
           }}
         >
           add student
@@ -193,9 +199,8 @@ const Home = () => {
         >
           Export Excel
         </CSVLink>
-       
       </div>
-     
+
       <div className="my-2">
         {loading ? (
           <div className="h-100 w-100 d-flex justify-content-center align-items-center position-relative">

@@ -4,13 +4,26 @@
       "id": "0",
       "name": "Anas Asif",
       "class": {
-        "id": "1",
-        "name": "Two",
-        "description": "primary junior"
+        "id": "3",
+        "name": "Four",
+        "description": "primary senior"
       },
       "section": {
         "id": "2",
         "name": "C"
+      }
+    },
+    {
+      "id": "1",
+      "name": "Usman Amjad",
+      "class": {
+        "id": "9",
+        "name": "Ten",
+        "description": "metric senior"
+      },
+      "section": {
+        "id": "3",
+        "name": "D"
       }
     }
   ],

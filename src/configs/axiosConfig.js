@@ -1,7 +1,7 @@
 import axios from "axios";
 
-
 export const baseURL = "http://localhost:8080/";
+// export const baseURL = "https://super-soft-five.vercel.app/";
 
 // axios instance for json data
 const custAxios = axios.create({

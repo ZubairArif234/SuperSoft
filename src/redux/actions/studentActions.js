@@ -1,9 +1,5 @@
 import custAxios from "../../configs/axiosConfig";
-import {
-  successMessage,
-  errorMessage,
-  warningMessage,
-} from "../../services/helpers";
+
 import { studentsConstants } from "../constants/studentConstants";
 
 export const getAll = () => async (dispatch) => {
@@ -11,7 +7,7 @@ export const getAll = () => async (dispatch) => {
     type: studentsConstants.GET_ALL_STUDENTS_REQUEST,
   });
   try {
-    const res = await custAxios.get();
+    const res = await custAxios.get("students/");
 
     if (res?.status === 200) {
       dispatch({
@@ -33,7 +29,7 @@ export const addStudent = (values) => async (dispatch) => {
     type: studentsConstants.ADD_STUDENT_REQUEST,
   });
   try {
-    const res = await custAxios.post("/",values);
+    const res = await custAxios.post("students/",values);
 
     if (res?.status === 200) {
       dispatch({
@@ -55,7 +51,7 @@ export const updateStudent = (values,id) => async (dispatch) => {
     type: studentsConstants.UPDATE_STUDENT_REQUEST,
   });
   try {
-    const res = await custAxios.put(`/${id}`,values);
+    const res = await custAxios.put(`students/${id}`,values);
 
     if (res?.status === 200) {
       dispatch({
@@ -77,7 +73,7 @@ export const deleteStudent = (id) => async (dispatch) => {
     type: studentsConstants.DELETE_STUDENT_REQUEST,
   });
   try {
-    const res = await custAxios.delete(`/${id}`);
+    const res = await custAxios.delete(`students/${id}`);
 
     if (res?.status === 200) {
       dispatch({

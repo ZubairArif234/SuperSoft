@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-export const baseURL = "http://localhost:8080/students/";
+export const baseURL = "http://localhost:8080/";
 
 // axios instance for json data
 const custAxios = axios.create({

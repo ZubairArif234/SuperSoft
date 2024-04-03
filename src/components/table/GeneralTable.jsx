@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { DataTable } from 'mantine-datatable';
 const GeneralTable = ({column , record , loading}) => {
-    const PAGE_SIZE = 8;
+    const PAGE_SIZE = 7;
     const [page, setPage] = useState(1);
     const [records, setRecords] = useState(record.slice(0, PAGE_SIZE));
   

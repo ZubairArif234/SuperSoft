@@ -1,58 +1,87 @@
 {
   "students": [
     {
-      "id": 3,
-      "name": "Zafar hussain"
+      "id": "0",
+      "name": "Anas Asif",
+      "class": {
+        "id": "1",
+        "name": "Two",
+        "description": "primary junior"
+      },
+      "section": {
+        "id": "2",
+        "name": "C"
+      }
+    }
+  ],
+  "classes": [
+    {
+      "id": "0",
+      "name": "One",
+      "description": "primary junior"
     },
     {
-      "id": 1,
-      "name": "ansari alam"
+      "id": "1",
+      "name": "Two",
+      "description": "primary junior"
     },
     {
-      "id": 4,
-      "name": "ansari alam"
+      "id": "2",
+      "name": "Three",
+      "description": "primary junior"
     },
     {
-      "id": 5,
-      "name": "ahmed aalam",
-      "class": "Svelte",
-      "section": "Vue"
+      "id": "3",
+      "name": "Four",
+      "description": "primary senior"
     },
     {
-      "id": 6,
-      "name": "junaid jumshad",
-      "class": "Vue",
-      "section": "Vue"
+      "id": "4",
+      "name": "Five",
+      "description": "primary senior"
     },
     {
-      "id": 7,
-      "name": "junaid jumshad",
-      "class": "Vue",
-      "section": "Vue"
+      "id": "5",
+      "name": "Six",
+      "description": "secondayy junior"
     },
     {
-      "id": 8,
-      "name": "junaid jumshad",
-      "class": "Vue",
-      "section": "Vue"
+      "id": "6",
+      "name": "Seven",
+      "description": "secondary junior"
     },
     {
-      "id": 9,
-      "name": "junaid jumshad",
-      "class": "Vue",
-      "section": "Vue"
+      "id": "7",
+      "name": "Eight",
+      "description": "secondary senior"
     },
     {
-      "id": 10,
-      "name": "junaid jumshad",
-      "class": "Vue",
-      "section": "Vue"
+      "id": "8",
+      "name": "Nine",
+      "description": "metric junior"
     },
     {
-      "id": 9,
-      "name": "kiran khan",
-      "class": "Vue",
-      "section": "Svelte"
+      "id": "9",
+      "name": "Ten",
+      "description": "metric senior"
+    }
+  ],
+  "sections": [
+    {
+      "id": "0",
+      "name": "A"
+    },
+    {
+      "id": "1",
+      "name": "B"
+    },
+    {
+      "id": "2",
+      "name": "C"
+    },
+    {
+      "id": "3",
+      "name": "D"
     }
   ]
 }
